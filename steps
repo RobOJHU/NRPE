@@ -1,11 +1,15 @@
-mkdir root/bin
-wget http://downloads.sourceforge.net/project/nagios/nrpe-2.x/nrpe-2.15/nrpe-2.15.tar.gz?r=&ts=1363788540&use_mirror=hivelocity
-ls
-tar -xzf nrpe-2.15.tar.gz
-ls
-cd nrpe-2.15/
-ls
-which groupadd
-/usr/sbin/groupadd nagios
-/usr/sbin/useradd -r -g nagios nagios
+%>mkdir root/bin
+%>wget http://downloads.sourceforge.net/project/nagios/nrpe-2.x/nrpe-2.15/nrpe-2.15.tar.gz?r=&ts=1363788540&use_mirror=hivelocity
+%>tar -xzf nrpe-2.15.tar.gz
+%>cd nrpe-2.15/
+%>/usr/sbin/groupadd nagios
+%>/usr/sbin/useradd -r -g nagios nagios
+
+BEFORE you can make make all make install      ..............
+you must check for openssl ----
+Use the following command to fix it:
+
+%>yum install openssl-devel
+re-run ./configure
+%>./configure
 
