@@ -12,4 +12,10 @@ Use the following command to fix it:
 %>yum install openssl-devel
 re-run ./configure
 %>./configure
-
+%>make all
+*** Compile finished ***
+%>make install-daemon
+%>make install-daemon-config
+%>vim /usr/local/nagios/etc/nrpe.cfg
+  allowed_hosts=127.0.0.1,128.220.106.106.17   --line # 81 -- NOT line #44 server address
+  
