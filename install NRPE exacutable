@@ -5,7 +5,7 @@
 %>/usr/sbin/groupadd nagios
 %>/usr/sbin/useradd -r -g nagios nagios
 
-BEFORE you can make make all make install      ..............
+BEFORE you can make, make all, make install      ..............
 you must check for openssl ----
 Use the following command to fix it:
 
