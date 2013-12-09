@@ -1,0 +1,24 @@
+cd /usr/local/nagios/libexec/
+
+check for EXISTENCE:
+[root@dargalwt1 libexec]# ls
+check_apt*       check_dummy*         check_imap@      check_ntp*       check_rpc*      check_users*
+check_breeze*    check_file_age*      check_ircd*      check_ntp_peer*  check_sensors*  check_wave*
+check_by_ssh*    check_flexlm*        check_load*      check_ntp_time*  check_smtp*     negate*
+check_clamd@     check_ftp@           check_log*       check_nwstat*    check_snmp*     urlize*
+check_cluster*   check_hpjd*          check_mailq*     check_oracle*    check_ssh*      utils.pm*
+check_dhcp*      check_http*          check_mrtg*      check_overcr*    check_swap*     utils.sh*
+check_dig*       check_icmp*          check_mrtgtraf*  check_ping*      check_tcp*
+check_disk*      check_ide_smart*     check_nagios*    check_pop@       check_time*
+check_disk_smb*  check_ifoperstatus*  check_nntp@      check_procs*     check_udp@
+check_dns*       check_ifstatus*      check_nt*        check_real*      check_ups*
+
+
+TEST LOCALLY on TARGET
+%>./check_disk -w=12% -c 8% -p /
+DISK OK - free space: / 8420 MB (88% inode=95%);| /=1146MB;10079;9272;0;10079
+
+%> ./check_disk -h
+
+
+
