@@ -19,3 +19,4 @@ re-run ./configure
 %>vim /usr/local/nagios/etc/nrpe.cfg
   allowed_hosts=127.0.0.1,128.220.106.106.17   --line # 81 -- NOT line #44 server address
   
+%>/usr/local/nagios/bin/nrpe -c /usr/local/nagios/etc/nrpe.cfg -d
