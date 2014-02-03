@@ -20,3 +20,26 @@ re-run ./configure
   allowed_hosts=127.0.0.1,128.220.106.17   --line # 81 -- NOT line #44 server address
 START the SERVICE as a deamon
 %>/usr/local/nagios/bin/nrpe -c /usr/local/nagios/etc/nrpe.cfg -d
+
+
+###################### PLUGINS  ###################
+
+
+ cd /root/NRPE/
+ 1032  wget http://assets.nagios.com/downloads/nagiosplugins/nagios-plugins-1.5.tar.gz   << get it
+ 1033  ls
+ 1034  tar -xzf nagios-plugins-1.5.tar.gz  << un tar it
+ 1035  ls
+ 1036  cd nagios-plugins-1.5/
+ 1037  ls
+ 1038  hist
+ 1039  ./configure  < build it
+ 1040  ls
+ 1041  vim README
+ 1042  make
+ 1043  make install
+ 1044  vim README
+ 1045  ps auxwff
+ 1046  kill -9 7495
+ 1047  hist
+ 1048  /usr/local/nagios/bin/nrpe -c /usr/local/nagios/etc/nrpe.cfg -d
