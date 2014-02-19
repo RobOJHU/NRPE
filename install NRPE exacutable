@@ -21,6 +21,9 @@ re-run ./configure
 START the SERVICE as a deamon
 %>/usr/local/nagios/bin/nrpe -c /usr/local/nagios/etc/nrpe.cfg -d
 
+%>getenforce
+
+check the current SEPOLICY
 
 ###################### PLUGINS  ###################
 
