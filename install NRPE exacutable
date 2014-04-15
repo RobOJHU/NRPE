@@ -11,6 +11,12 @@ Use the following command to fix it:
 
 %>yum install openssl-devel
 re-run ./configure
+
+
+cp -r ./plugins /usr/lib64/.
+
+
+
 %>./configure
 %>make all
 *** Compile finished ***
